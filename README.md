@@ -24,3 +24,5 @@ O que **não** está incluído nesta etapa (previsto para o futuro):
 
 ## Como visualizar
 Como o projeto atualmente é composto por arquivos estáticos simples, basta fazer o download do arquivo `Arena Inclusiva.html` e abri-lo em qualquer navegador de internet moderno (como Chrome, Firefox ou Edge). Não é necessário instalar nenhum servidor ou dependência.
+
+Também está disponível uma versão funcional em `projeto/Front_end/index.html`, com catálogo de esportes adaptados, alternância de tema e modo de alto contraste. Para visualizá-la, abra esse arquivo diretamente no navegador.
