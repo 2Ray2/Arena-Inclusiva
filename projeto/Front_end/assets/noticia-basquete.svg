@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
-  <rect width="800" height="450" fill="#8f3516"/>
-  <circle cx="600" cy="250" r="230" fill="#d66d27"/>
-  <path d="M0 350h800v100H0z" fill="#e69a51"/>
-  <circle cx="520" cy="210" r="58" fill="#f3a342"/>
-  <path d="M465 210h110M520 155v110M482 170q75 40 0 80M558 170q-75 40 0 80" fill="none" stroke="#8f3516" stroke-width="8"/>
-  <text x="34" y="58" fill="#fff" font-family="Arial" font-size="30" font-weight="700">BASQUETE</text>
-</svg>
