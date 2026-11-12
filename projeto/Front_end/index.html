@@ -1,15 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena Inclusiva — Esporte Sem Limites</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Arena Inclusiva: informação, inspiração e oportunidades no esporte adaptado.">
+  <title>Arena Inclusiva | Esporte sem limites</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="js/data.js"></script>
-    <script src="js/app.js"></script>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Arena Inclusiva, página inicial">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>Arena <strong>Inclusiva</strong></span>
+      </a>
+      <div class="header-actions">
+        <button class="text-button" type="button" data-action="contrast" aria-pressed="false">Alto contraste</button>
+        <button class="text-button" type="button" data-action="theme" aria-pressed="false">Modo escuro</button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Abrir menu</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+    <nav id="menu-principal" class="main-nav" aria-label="Categorias e páginas do site">
+      <ul>
+        <li><a class="active" aria-current="page" href="./index.html">Home</a></li>
+        <li><a href="./basquete.html">Basquete em cadeira de rodas</a></li>
+        <li><a href="./atletismo.html">Atletismo adaptado</a></li>
+        <li><a href="./natacao.html">Natação paralímpica</a></li>
+        <li><a href="./volei-sentado.html">Vôlei sentado</a></li>
+        <li><a href="./futebol-de-5.html">Futebol de 5</a></li>
+        <li><a href="./goalball.html">Goalball</a></li>
+        <li><a href="./bocha.html">Bocha</a></li>
+        <li><a href="./tenis-de-mesa-adaptado.html">Tênis de mesa adaptado</a></li>
+        <li><a href="./ciclismo-adaptado.html">Ciclismo adaptado</a></li>
+        <li><a href="./rugby-em-cadeira.html">Rugby em cadeira de rodas</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./doacao.html">Doações</a></li>
+        <li><a href="./multimidia.html">Multimídia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" aria-labelledby="titulo-principal">
+      <div>
+        <p class="eyebrow">Esporte sem limites</p>
+        <h1 id="titulo-principal">Toda conquista merece espaço.</h1>
+        <p class="hero-lead">Notícias, histórias e caminhos para viver o esporte adaptado com informação, autonomia e inclusão.</p>
+        <a class="button button-primary" href="#noticias">Ver notícias em destaque</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Atleta em cadeira de rodas praticando esporte">
+        <span aria-hidden="true">♿</span>
+      </div>
+    </section>
+
+    <section class="container section-block" aria-labelledby="titulo-noticias">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Arena Inclusiva</p>
+          <h2 id="titulo-noticias">Últimas notícias</h2>
+        </div>
+        <label class="filter-label" for="filtro-noticias">Filtrar por modalidade
+          <select id="filtro-noticias">
+            <option value="todas">Todas</option>
+            <option value="futebol">Futebol</option>
+            <option value="basquete">Basquete</option>
+            <option value="natacao">Natação</option>
+            <option value="atletismo">Atletismo</option>
+          </select>
+        </label>
+      </div>
+      <div id="noticias" class="news-grid">
+        <article class="news-card news-card-featured" data-category="futebol">
+          <img class="news-image" src="./assets/noticia-futebol.svg" alt="Jogador de futebol de 5 conduzindo uma bola sonora em campo">
+          <div class="news-content">
+            <p class="category">FUTEBOL DE 5</p>
+            <h3><a href="./futebol-de-5.html">Futebol de 5: o som que guia cada jogada</a></h3>
+            <ul class="highlights">
+              <li>Conheça a bola sonora e as regras da modalidade</li>
+              <li>Como a comunicação fortalece o trabalho em equipe</li>
+            </ul>
+            <time datetime="2026-11-11">Há 2 horas</time>
+          </div>
+        </article>
+        <article class="news-card" data-category="basquete">
+          <img class="news-image" src="./assets/noticia-basquete.svg" alt="Atleta de basquete em cadeira de rodas arremessando à cesta">
+          <div class="news-content">
+            <p class="category">BASQUETE</p>
+            <h3><a href="./basquete.html">Velocidade, estratégia e potência sobre quatro rodas</a></h3>
+            <ul class="highlights">
+              <li>Descubra como começar a praticar</li>
+              <li>Equipamentos que ampliam a autonomia</li>
+            </ul>
+            <time datetime="2026-11-11">Há 5 horas</time>
+          </div>
+        </article>
+        <article class="news-card" data-category="natacao">
+          <img class="news-image" src="./assets/noticia-natacao.svg" alt="Nadadora paralímpica avançando em uma piscina">
+          <div class="news-content">
+            <p class="category">NATAÇÃO</p>
+            <h3><a href="./natacao.html">Natação paralímpica: água para todos os corpos</a></h3>
+            <ul class="highlights">
+              <li>Benefícios para diferentes deficiências</li>
+              <li>Classificação funcional sem mistério</li>
+            </ul>
+            <time datetime="2026-11-10">Ontem</time>
+          </div>
+        </article>
+        <article class="news-card" data-category="atletismo">
+          <img class="news-image" src="./assets/noticia-atletismo.svg" alt="Corredor paralímpico competindo em uma pista">
+          <div class="news-content">
+            <p class="category">ATLETISMO</p>
+            <h3><a href="./atletismo.html">Tecnologia e talento nas pistas paralímpicas</a></h3>
+            <ul class="highlights">
+              <li>Próteses esportivas e segurança</li>
+              <li>Onde encontrar treinos acessíveis</li>
+            </ul>
+            <time datetime="2026-11-09">Há 2 dias</time>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>Nenhuma notícia encontrada para esse filtro.</p>
+    </section>
+
+    <section class="support-strip" aria-labelledby="titulo-participe">
+      <div class="container support-content">
+        <div>
+          <p class="eyebrow">Faça parte</p>
+          <h2 id="titulo-participe">Inclusão se constrói em rede.</h2>
+          <p>Compartilhe uma história, seja voluntário ou apoie projetos que transformam vidas pelo esporte.</p>
+        </div>
+        <div class="support-actions">
+          <a class="button button-primary" href="./contato.html">Quero ser voluntário</a>
+          <a class="button button-light" href="./doacao.html">Apoiar o projeto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="./index.html"><span class="brand-mark" aria-hidden="true">AI</span><span>Arena <strong>Inclusiva</strong></span></a>
+        <p>Informação para que cada pessoa encontre seu lugar no esporte.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <a href="./sobre.html">Sobre o projeto</a>
+        <a href="./multimidia.html">Multimídia</a>
+        <a href="./faq.html">Perguntas frequentes</a>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <a href="./contato.html">Fale com a equipe</a>
+        <a href="./doacao.html">Apoie a iniciativa</a>
+      </div>
+    </div>
+    <div class="container footer-bottom"><small>Projeto acadêmico • Arena Inclusiva</small></div>
+  </footer>
 </body>
 </html>

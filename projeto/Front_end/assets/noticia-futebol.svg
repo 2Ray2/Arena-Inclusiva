@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#174c36"/>
+  <circle cx="650" cy="120" r="180" fill="#2d7653"/>
+  <circle cx="160" cy="360" r="220" fill="#276646"/>
+  <path d="M0 365 800 240v35L0 400z" fill="#8fc99e" opacity=".8"/>
+  <circle cx="390" cy="225" r="58" fill="#fff"/>
+  <path d="m390 175 18 28-11 34h-34l-11-34 18-28z" fill="#174c36"/>
+  <text x="34" y="58" fill="#fff" font-family="Arial" font-size="30" font-weight="700">FUTEBOL DE 5</text>
+</svg>
